@@ -2,17 +2,13 @@
 
 ---
 
-# 🏷️ Nome do Projeto 👨‍💻
-
-> [!NOTE]
-> Breve descrição do projeto. **Foque no principal valor/benefício.**  
-> Crie uma **logo** para o projeto que represente a aplicação em questão.
+# 🏷️ Portifolio 👨‍💻
 
 <table>
   <tr>
     <td width="800px">
       <div align="justify">
-        Este <b>README.md</b> apresenta um template organizado, ideal para servir como referência acadêmica e profissional em projetos de desenvolvimento, desde trabalhos da faculdade até projetos desenvolvidos para etapas técnicas de processos seletivos. Ele reúne as <i>seções essenciais</i> recomendadas pelo <a href="https://github.com/joaopauloaramuni">Prof. Dr. João Paulo Aramuni</a>, permitindo <i>organização clara</i>, <i>documentação eficiente</i> e <i>padronização</i> entre diferentes trabalhos. O objetivo deste esqueleto é <b>facilitar a construção de projetos bem documentados</b>, oferecendo um <i>guia completo</i> que inclui <b>boas práticas</b>, instruções de execução, tecnologias utilizadas, arquitetura, estruturas de pastas, testes, links úteis e orientações para colaboração. Esse template ajuda estudantes a desenvolverem <b>documentação de qualidade profissional</b> desde os primeiros períodos, promovendo <i>clareza</i>, <i>reprodutibilidade</i> e <i>padronização</i> nos projetos.
+        Este projeto representa a coleção de trabalhos e experiencias profissionais que compoem minha jornada academica e profissional
       </div>
     </td>
     <td>
@@ -41,7 +37,6 @@
 ---
 
 ## 📚 Índice
-- [Links Úteis](#-links-úteis)
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Funcionalidades Principais](#-funcionalidades-principais)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
@@ -77,123 +72,124 @@
 
 ---
 
-## 🔗 Links Úteis
-* 🌐 **Demo Online:** [Acesse a Aplicação Web](<link-da-demo-web>)
-  > 💻 **Descrição:** Link para a aplicação em ambiente de produção (Ex: hospedado na Vercel, Netlify ou AWS S3).
-* 📱 **Download Mobile:** [App Store](<link-app-store>) | [Google Play](<link-google-play>) | [APK Direto](<link-para-apk-direto>)
-  > 📱 **Descrição:** Links diretos para download nas lojas de aplicativos (se aplicável) e para o arquivo de instalação direta no Android (APK).
-* 📖 **Documentação:** [Leia a Wiki/Docs](<link-para-docs>)
-  > 📚 **Descrição:** Acesso à documentação técnica completa do projeto (Ex: Swagger/OpenAPI para API, ou Wiki interna).
-
----
-
 ## 📝 Sobre o Projeto
-Nesta seção, descreva de forma clara e objetiva **o propósito do seu projeto**, explicando:
-
-- **Por que ele existe** — qual motivação levou à sua criação.  
-- **Qual problema ele resolve** — que dor, necessidade ou oportunidade ele atende.  
-- **Qual o contexto** — acadêmico, profissional, pessoal, experimental, etc.  
-- **Onde ele pode ser utilizado** — cenários reais ou simulados.  
-
-Procure responder perguntas como:
-- *Qual foi a ideia inicial do projeto?*
-- *O que ele entrega de valor ao usuário?*
-- *Por que alguém utilizaria ou contribuiria com esse projeto?*
-- *O que o torna relevante ou interessante?*
-
-Escreva de forma objetiva, mas completa, para que qualquer pessoa entenda rapidamente **o que é** e **por que importa**.
-
-> [!NOTE]
-> Esta seção segue boas práticas de documentação profissional e deve ser ajustada conforme o tipo e o objetivo do seu projeto.
+O projeto foi criado com o intuito de demonstrar a minha trajetoria profissional com um historico de tudo feito até hoje, demonstrando meu crescimento na área e suas aplicações
 
 ---
 
 ## ✨ Funcionalidades Principais
-Liste as funcionalidades de forma clara e objetiva.
-
-- 🔐 **Autenticação Segura:** Login, Cadastro e Recuperação de Senha.
-- 📈 **Painel de Controle:** Visualização de dados em tempo real com gráficos.
-- ⚙️ **Gerenciamento de CRUD:** Criação, Leitura, Atualização e Deleção de recursos (e.g., Usuários, Itens, Posts).
-- 📊 **Relatórios Exportáveis:** Exportação de dados em PDF, CSV ou Excel.
-- 🌐 **Internacionalização (i18n):** Suporte a múltiplos idiomas.
-- 🧵 **Logs e Monitoramento:** Registro detalhado de atividades e análise de desempenho.
-- 🔄 **Integração com APIs Externas:** Conexão com serviços de terceiros (pagamentos, mapas, autenticação, etc.).
-- 📨 **Sistema de Notificações:** Envio de alertas por e-mail, push ou notificações internas.
+-> Menu funcional -> Menu funcional no topo de cada pagina;
+-> Envio de Emails -> Funcionalidade do envio de emails a partir da pagina diretamente para seu criador;
+-> Sorteio de pokemons -> A pagina tem a opção de sortear 3 pokemons conforme a vontade do usuario;
+-> Timeline de projetos dinamico -> Timeline de projetos feitos que mostra os projetos conforme se é clicado nas "bolas" da timeline;
+-> Mudança de Linguagens -> Botão que realiza a mudança da linguagem da pagina principal do projeto.
 
 ---
 
 ## 🛠 Tecnologias Utilizadas
 
-As seguintes ferramentas, frameworks e bibliotecas foram utilizados na construção deste projeto. Recomenda-se o uso das versões listadas (ou superiores) para garantir a compatibilidade.
-
 ### 💻 Front-end
 
-* **Framework/Biblioteca:** [Ex: React v18, Vue.js v3, Angular v17]
-* **Linguagem/Superset:** [Ex: TypeScript, JavaScript ES6+]
-* **Estilização:** [Ex: Tailwind CSS, Sass, Styled Components, Material UI]
-* **Gerenciamento de Estado:** [Ex: Redux Toolkit, Zustand, Context API]
-* **Build Tool:** [Ex: Vite, Webpack]
+- **HTML5:** estruturação das páginas e dos componentes.
+- **CSS3:** estilização, posicionamento dos elementos, animações e responsividade.
+- **JavaScript:** manipulação do DOM, gerenciamento dos eventos de clique e atualização dinâmica dos conteúdos.
+- **tsParticles:** criação do fundo animado com partículas interativas.
+- **API pública de Pokémon:** obtenção dos dados utilizados na seção de Pokémon.
 
-### 🖥️ Back-end
+### 🧰 Ferramentas de desenvolvimento
 
-* **Linguagem/Runtime:** [Ex: Java 17 (JDK), Node.js v20, Python 3.11]
-* **Framework:** [Ex: Spring Boot 3.x, NestJS, Express, Django]
-* **Banco de Dados:** [Ex: PostgreSQL, MySQL, MongoDB]
-* **ORM / Query Builder:** [Ex: Hibernate/JPA, Prisma, TypeORM]
-* **Autenticação:** [Ex: JWT, OAuth2, Spring Security]
-
-### 📱 Mobile (Opcional)
-
-* **Framework:** [Ex: React Native, Flutter, Kotlin Multiplatform]
-* **Ferramentas:** [Ex: Expo, Android Studio, Xcode]
-
-### ⚙️ Infraestrutura & DevOps
-
-* **Containerização:** [Ex: Docker, Docker Compose]
-* **Orquestração:** [Ex: Kubernetes (K8s)]
-* **Cloud:** [Ex: AWS (EC2, RDS, S3), Vercel, Heroku, Google Cloud]
-* **CI/CD:** [Ex: GitHub Actions, Jenkins, SonarQube]
+- **Visual Studio Code:** edição e manutenção dos arquivos.
+- **Git:** controle de versão.
+- **GitHub:** hospedagem do código-fonte e documentação dos projetos.
+- **Navegador web:** execução e testes da aplicação.
 
 ---
 
 ## 🏗 Arquitetura
 
-Descreva aqui a **arquitetura completa do sistema**, explicando como as camadas, módulos e componentes foram organizados. Informe também **por que** essa arquitetura foi escolhida e **quais problemas ela ajuda a resolver**.
+O projeto segue uma arquitetura de aplicação web estática, organizada em páginas HTML, folhas de estilo CSS e arquivos JavaScript responsáveis pelas interações.
 
-Você pode incluir:
+### Organização das responsabilidades
 
-- **Visão geral da arquitetura** (ex.: camadas, módulos, microsserviços, monólito modular, hexagonal, MVC etc.)
-- **Principais componentes** e o papel de cada um
-- **Padrões de design adotados** (ex.: Repository, Service Layer, DTOs, Factory, Observer)
-- **Fluxo de dados** entre as partes do sistema
-- **Tecnologias utilizadas em cada camada**
-- **Decisões arquiteturais importantes**
-- **Trade-offs** ou limitações relevantes
+| Componente | Responsabilidade |
+|---|---|
+| HTML | Define a estrutura e o conteúdo das páginas. |
+| CSS | Controla o layout, as cores, a tipografia e os efeitos visuais. |
+| JavaScript | Implementa a interação com os elementos da página. |
+| tsParticles | Renderiza o fundo animado de partículas. |
+| API de Pokémon | Fornece os dados utilizados para gerar os cartões de Pokémon. |
 
-### Exemplos de diagramas
+### Fluxo de funcionamento
 
-Para melhor visualização e entendimento da estrutura do sistema, os diagramas principais estão organizados lado a lado.
+1. O navegador carrega a página HTML.
+2. Os arquivos CSS definem a apresentação visual dos elementos.
+3. O JavaScript configura os eventos e as interações.
+4. Ao clicar em um ponto da linha do tempo, o painel do projeto correspondente é exibido.
+5. Na seção de Pokémon, o JavaScript consulta a API e apresenta os dados retornados.
 
-| Diagrama de Arquitetura | Detalhe da Arquitetura |
-| :---: | :---: |
-| **Visão Geral (Macro)** | **Camada de Serviço (Micro)** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Visão Geral do Sistema" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Componentes ou Serviço X" width="120px" height="120px"> |
-| **Modelo de Dados (Entidades)** | **Fluxo de Autenticação** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Entidade-Relacionamento (DER)" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Sequência de Login" width="120px" height="120px"> |
-| **Infraestrutura (Cloud)** | **API Gateway (Rotas)** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Diagrama de Deploy na AWS/Vercel" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Mapa de Endpoints da API" width="120px" height="120px"> |
+### Estrutura de diretórios
+
+A estrutura abaixo é ilustrativa e pode ser ajustada à organização real do repositório.
+
+```text
+portfolio/
+├── PaginaP/
+│   ├── Curriculo.html
+│   ├── Curriculo.css
+│   ├── Curriculo.js
+│   └── futaba.jpeg
+├── Proj/
+│   ├── Projetos.html
+│   ├── Projetos.css
+│   └── Projetos.js
+├── Exp/
+│   ├── Exp.html
+│   ├── Exp.css
+│   └── Exp.js
+├── Contato/
+│   ├── Contato.html
+│   ├── Contato.css
+│   └── Contato.js
+└── README.md
+```
 
 ---
 
-## 🔧 Instalação e Execução
+## ⚙️ Instalação e Execução
 
 ### Pré-requisitos
-Certifique-se de que o usuário tenha o ambiente configurado.
 
-* **Java JDK:** Versão **17** ou superior (Necessário para o **Back-end Spring Boot**)
-* **Node.js:** Versão LTS (v18.x ou superior) (Necessário para o **Front-end React**)
-* **Gerenciador de Pacotes:** npm ou yarn
-* **Docker** (Opcional, mas **altamente recomendado** para rodar o Banco de Dados)
+- Navegador atualizado, como Google Chrome, Microsoft Edge ou Firefox.
+- Editor de código, como Visual Studio Code.
+- Extensão Live Server para facilitar a execução durante o desenvolvimento (opcional).
+- Conexão com a internet para carregar bibliotecas externas e consultar a API de Pokémon.
+
+### 1. Clonar o repositório
+
+```bash
+git clone URL_DO_SEU_REPOSITORIO
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd portfolio
+```
+
+### 2. Executar o projeto
+
+**Opção A — Abrir diretamente**
+
+Abra o arquivo `PaginaP/Curriculo.html` no navegador.
+
+**Opção B — Utilizar o Live Server**
+
+1. Abra a pasta do projeto no Visual Studio Code.
+2. Instale a extensão Live Server, caso ainda não esteja instalada.
+3. Abra o arquivo `PaginaP/Curriculo.html`.
+4. Clique com o botão direito e selecione **Open with Live Server**.
+
+O navegador abrirá a página localmente. A partir dela, será possível navegar pelas demais seções.
 
 ---
 
@@ -297,6 +293,8 @@ VITE_GOOGLE_MAPS_KEY=AIzaSy...
 
 > 💡 **Localização:** Garanta que este arquivo esteja em **`/frontend/.env.local`** para que o **Vite** consiga carregá-lo e disponibilizar as variáveis para o Front-end durante o desenvolvimento.
 
+---
+
 ### 📦 Instalação de Dependências
 
 Clone o repositório e instale as dependências.
@@ -341,7 +339,6 @@ O Spring Boot utiliza o **Maven Wrapper** (`./mvnw`) ou **Gradle Wrapper** (`./g
     ./gradlew clean build
     cd ..
     ```
-
 ---
 
 ### 💾 Inicialização do Banco de Dados (PostgreSQL)
@@ -454,44 +451,6 @@ docker-compose down
 ```
 
 ✅ **Em resumo:** Usar **`docker-compose`** simplifica a execução do ambiente completo, isolando as dependências de **Java (Spring Boot)** e **Node.js (React)** e garantindo que o PostgreSQL esteja disponível.
-
----
-
-## 🚀 Deploy
-Instruções claras para deploy em produção.
-
-1.  **Build do Projeto:**
-    Execute o build separadamente para os dois artefatos (JAR para o Back-end e arquivos estáticos para o Front-end).
-
-```bash
-# 1. Build do Front-end (React/Vite) - Gera a pasta /dist com arquivos estáticos
-cd frontend
-npm run build
-
-# 2. Build do Back-end (Spring Boot/Maven) - Gera o arquivo .jar executável em /target
-cd ../backend
-./mvnw clean package
-```
-
-2.  **Configuração do Ambiente de Produção:** Defina as variáveis de ambiente no seu provedor (e.g., Vercel, Railway, Heroku, DigitalOcean).
-
-> 🔑 **Variáveis Cruciais:** Certifique-se de configurar as variáveis de **conexão com o banco de dados** (`SPRING_DATASOURCE_URL`, etc.) para o Back-end e a **URL da API de produção** (`VITE_API_URL`) para o Front-end.
-
-3.  **Execução em Produção:**
-    A forma de execução depende do seu provedor, mas geralmente envolve o seguinte:
-
-```bash
-# ☕ Execução do Back-end Spring Boot (Java JAR)
-# Este comando inicia a API usando o artefato JAR gerado.
-java -jar backend/target/nome-do-do-projeto-0.0.1-SNAPSHOT.jar
-
-# 🟢 Execução do Front-end (React/Vite)
-# O Front-end (arquivos estáticos) não é executado via Node, mas servido por um servidor web.
-# Exemplo de servidor de arquivos estáticos (usando Nginx, Vercel, Netlify, etc.)
-# Para simular a produção localmente ou rodar em uma VPS simples, use o pacote 'serve':
-npm install -g serve
-serve -s frontend/dist
-```
 
 ---
 
