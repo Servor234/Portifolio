@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Inicio</title>
+        <link rel="Stylesheet" href="Curriculo.css">
+    </head>
+    
+    <body>
+        <nav class="menu">
+            <div id="id2" class = "links ling">    
+                <a href = "../Proj/Projetos.html" class = "Projeto">Projetos</a>
+                <a href = "../Exp/Exp.html" class = "Exp">Experiencia</a>
+                <a href = "../Contato/Contato.html" class = "Cont">Contato</a>
+            </div>
+
+            <div id="Eng" class="links ling escondido bomba">
+                <a href = "../Proj/Projetos.html" class = "Projeto">Projects</a>
+                <a href = "../Exp/Exp.html" class = "Exp">Experiences</a>
+                <a href = "../Contato/Contato.html" class = "Cont">Contact</a>
+            </div>
+
+            <div class = "botao">
+                <div class = "texto">
+                    PT/ENG
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="id1">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+        
+        <div class = "borda">
+            <img src="Foto.jpg" class = "foto">
+        </div>
+        <h1>Renato Teixeira</h1>
+            
+
+        <div id="id3" class = "ling">
+            <p>
+                Atualmente aluno de ciência da computação na PUC Minas, no segundo período,
+                buscando atuar como desenvolvedor nas áreas de cloud e back-end,
+                e seguir com estudos nestas áreas para otimizar soluções e
+                criar tecnologias que apoiem a criação de soluções inteligentes de novos problemas. 
+            </p>
+
+            <p>E eu sempre gostei de jogos!</p>
+            
+        </div>
+
+
+        <div id="Eng2" class="ling escondido bomba">
+                <p>
+                    Currently pursuing a computer science degree at PUC Minas, in my first year,
+                    seeking to act as a developer in the areas of cloud computing and back-end,
+                    and wishing to continue my studies in these fields to improve solutions and developing
+                    new technologies that support the creation of innovative solutions to new problems.
+                </p>
+
+            <p>And i always liked video games!</p>
+
+        </div>
+
+        <section class="pokedex">
+            <button id="sortear">Gere novos!</button>
+            <div id="pokemon-container" class="pokemon-grid">
+                <p>Clique para sortear Pokémon!</p>
+            </div>
+
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/basic"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/interaction-particles-links"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+        <script src="Curriculo.js"></script>
+    </body>
+</html>
