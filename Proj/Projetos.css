@@ -1,0 +1,228 @@
+body{
+    padding:50px;
+    background-color:rgba(230,230,230);
+    background-color: #0b1120;
+    color: white;
+}
+
+h1{
+    text-align:center;
+}
+
+
+
+.menu{
+    position:fixed;/*faz o texto ficar sempre no meio da tela*/
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;/*ajeita o texto para ficar separado no meio da tela*/
+    justify-content:center;
+    text-align:center;
+    gap:100px;
+    padding:20px;
+
+
+    background:white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+
+}
+
+.menu a{
+    text-decoration:none;/*tira a barrinha em baixo do link*/
+    color:black;
+}
+
+.menu a.Curr{
+    font-size:18px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Curr:hover{
+    font-size:26px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Exp{
+    font-size:18px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Exp:hover{
+    font-size:26px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Cont{
+    font-size:19px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Cont:hover{
+    font-size:26px;
+    transition: font-size 0.5s ease;
+}
+
+
+#particles {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.apresentacao {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.fechar{
+    position:absolute;
+    top:10px;
+    right:15px;
+    background:none;
+    border:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+.Linha-T {
+    position: relative;
+    width: 80%;
+    margin: 300px auto 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linha {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    margin: 0;
+    border: none;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+.Marco {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.Bolinha {
+    position: absolute;
+    inset: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: gray;
+    transform: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.Bolinha:hover {
+    background-color: #3a25f7;
+    transform: scale(1.3);
+}
+
+.Bolinha1,
+.Bolinha2,
+.Bolinha3,
+.Bolinha4,
+.Bolinha5 {
+    left: auto;
+    top: auto;
+}
+
+
+.Painel {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 30px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 280px;
+    max-width: 80vw;
+    box-sizing: border-box;
+    padding: 20px;
+
+    background: #1c2940;
+    color: white;
+    border: 1px solid #90a4ff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+    text-align: left;
+    overflow-wrap: anywhere;
+    z-index: 10;    
+}
+
+.Painel.aberto {
+    display: block;
+}
+
+.Painel::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background: #90a4ff;
+    transform: translateX(-50%);
+}
+
+.Painel h2 {
+    font-size: 19px;
+    margin-top: 0;
+}
+
+.Painel p {
+    font-size: 15px;
+}
+
+.Painel a {
+    color: #90a4ff;
+}
+
+img{
+    width:100px;
+    height:auto;
+}
+
+.Painel .texto {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.Painel .foto {
+    width: 90px;
+    height: 45px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.Painel .detalhes {
+    flex: 1;
+    min-width: 0;
+}
+
+.Painel .detalhes p {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
