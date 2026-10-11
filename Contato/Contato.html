@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contatos</title>
+        <link rel = "Stylesheet" href = "Contato.css">
+        <nav class="menu">
+            <a href = "../Proj/Projetos.html" class="Projeto">Projetos</a>
+            <a href = "../Exp/Exp.html" class="Exp">Experiencia</a>
+            <a href = "../PaginaP/Curriculo.html" class="Curr">Inicio</a>
+        </nav>
+    </head>
+    <body>
+        <h1>Fale comigo!</h1>
+
+        
+        <section class="repositorios">
+            <h2>Meus projetos no GitHub</h2>
+
+            <div id="lista-repositorios">
+                Carregando projetos...
+            </div>
+        </section>
+
+        <div class = "imagens">
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img src="OIP2.webp" alt="LinkedIn">
+            </a>
+
+            <a href="https://github.com/Servor234/" target="_blank">
+                <img src="Git.png" alt="Git">
+            </a>
+
+            <!-- Imagem que abre o menu -->
+            <img src="Gmail.png" alt="Abrir menu" id="abrirMenu" class="imagem-menu">
+
+            <!-- Menu overlay -->
+            <di v id="overlay" class="overlay">
+                <div class="menu-overlay">
+                    <button id="fecharMenu" class="fechar">&times;</button>
+                    <section class="contato">
+                        <h2>Entre em contato</h2>
+                        <p>Preencha o formulário para me enviar uma mensagem.</p>
+
+                        <form id="form-contato">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="name" placeholder="Seu nome" required>
+
+                            <label for="email">Seu e-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="title" placeholder="Assunto da mensagem" required>
+
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="message"placeholder="Escreva sua mensagem..."rows="5" required></textarea>
+
+                            <button type="submit" id="botao-enviar">
+                                Enviar mensagem
+                            </button>
+
+                            <p id="status-envio" role="status"></p>
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+            
+
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+        <script src = "Contato.js"></script>
+    </body>
+</html>

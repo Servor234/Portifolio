@@ -1,0 +1,279 @@
+body{
+    padding:40px;
+    background-color:rgba(230,230,230)
+}
+
+.menu{
+    position:fixed;/*faz o texto ficar sempre no meio da tela*/
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;/*ajeita o texto para ficar separado no meio da tela*/
+    justify-content:center;
+    text-align:center;
+    gap:100px;
+    padding:20px;
+
+
+    background:white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+
+}
+
+.menu a{
+    text-decoration:none;/*tira a barrinha em baixo do link*/
+    color:black;
+}
+
+.menu a.Curr{
+    font-size:18px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Curr:hover{
+    font-size:26px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Exp{
+    font-size:18px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Exp:hover{
+    font-size:26px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Projeto{
+    font-size:19px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Projeto:hover{
+    font-size:26px;
+    transition: font-size 0.5s ease;
+}
+
+
+#particles {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.apresentacao {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Opcional: visual tecnológico */
+body {
+    background-color: #0b1120;
+    color: white;
+}
+
+h1{
+    text-align:center;
+    font-size:50px;
+}
+
+
+.repositorios {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+#lista-repositorios {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.repo-card {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255,0.75);
+    color: #222;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s;
+    text-align:center;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+}
+
+.repo-card a {
+    color: #0969da;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.repo-card p {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    #lista-repositorios {
+        grid-template-columns: 1fr;
+    }
+}
+
+h2{
+    text-align:center;
+}
+
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagens img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    transition:width 0.5s ease;
+}
+
+img{
+    width:100px;
+    height:auto;
+    transition:width 0.5s ease; 
+}
+
+img:hover{
+    width:150px;
+    height:auto;
+}
+
+
+.imagem-menu {
+    width: 60px;
+    cursor: pointer;
+}
+
+/* Fundo que cobre a tela */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Classe ativada pelo JavaScript */
+.overlay.ativo {
+    display: flex;
+}
+
+/* Caixa do menu */
+.menu-overlay {
+    position: relative;
+    background-color: #0b1120;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    min-width: 150px;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+}
+
+.menu-overlay a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.menu-overlay a:hover {
+    color: white;
+}
+
+/* Botão de fechar */
+.fechar {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icon{
+    width:20px;
+    height:auto;
+}
+
+
+.contato {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+}
+
+.contato h2 {
+    text-align: center;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#form-contato input,
+#form-contato textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #64748b;
+    border-radius: 8px;
+    background: #172033;
+    color: white;
+    font: inherit;
+}
+
+#form-contato textarea {
+    resize: vertical;
+}
+
+#form-contato button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: #0b1120;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-contato button:hover {
+    background: #7dd3fc;
+}
+
+#status-envio {
+    font-size: 16px;
+}
+
+#mensagem {
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+}
