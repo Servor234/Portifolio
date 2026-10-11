@@ -78,11 +78,11 @@ O projeto foi criado com o intuito de demonstrar a minha trajetoria profissional
 ---
 
 ## ✨ Funcionalidades Principais
--> Menu funcional -> Menu funcional no topo de cada pagina;
--> Envio de Emails -> Funcionalidade do envio de emails a partir da pagina diretamente para seu criador;
--> Sorteio de pokemons -> A pagina tem a opção de sortear 3 pokemons conforme a vontade do usuario;
--> Timeline de projetos dinamico -> Timeline de projetos feitos que mostra os projetos conforme se é clicado nas "bolas" da timeline;
--> Mudança de Linguagens -> Botão que realiza a mudança da linguagem da pagina principal do projeto.
+- Menu funcional -> Menu funcional no topo de cada pagina;
+- Envio de Emails -> Funcionalidade do envio de emails a partir da pagina diretamente para seu criador;
+- Sorteio de pokemons -> A pagina tem a opção de sortear 3 pokemons conforme a vontade do usuario;
+- Timeline de projetos dinamico -> Timeline de projetos feitos que mostra os projetos conforme se é clicado nas "bolas" da timeline;
+- Mudança de Linguagens -> Botão que realiza a mudança da linguagem da pagina principal do projeto.
 
 ---
 
