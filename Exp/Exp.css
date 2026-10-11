@@ -1,0 +1,115 @@
+body{
+    padding:40px;
+    font-size:30px;
+    background-color:rgba(230,230,230);
+    background-color: #0b1120;
+    color: white;
+}
+
+h1{
+    text-align:center;
+}
+
+.par{
+    display:flex;
+    align-items:center;
+    font-size:30px;
+    background-color:rgba(255, 255, 255, 0.25);
+    border-radius:8px;
+    margin-top:10px;
+}
+
+.par img{
+    float:left;
+    margin:0 0 10px 20px;
+}
+.im{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    font-size:30px;
+    background-color:rgba(255, 255, 255, 0.25);
+    border-radius:8px;
+    margin-top:10px;
+}
+
+img{
+    border-radius:10px;
+}
+
+.foto{
+    width:200px;
+    height:auto;
+}
+
+.im img{
+    float:right;
+    margin:0 20px 10px 0;
+}
+
+.menu{
+    position:fixed;/*faz o texto ficar sempre no meio da tela*/
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;/*ajeita o texto para ficar separado no meio da tela*/
+    justify-content:center;
+    text-align:center;
+    gap:100px;
+    padding:20px;
+
+
+    background:white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+
+}
+
+.menu a{
+    text-decoration:none;/*tira a barrinha em baixo do link*/
+    color:black;
+}
+
+.menu a.Cont{
+    font-size:18px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Cont:hover{
+    font-size:26px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Curr{
+    font-size:18px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Curr:hover{
+    font-size:26px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Projeto{
+    font-size:19px;
+    transition: font-size 0.5s ease;
+}
+
+.menu a.Projeto:hover{
+    font-size:26px;
+    transition: font-size 0.5s ease;
+}
+
+#particles {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.apresentacao {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+}
