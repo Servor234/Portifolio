@@ -432,6 +432,22 @@ docker-compose down
 
 ---
 
+## ☁️ Deploy
+
+O projeto está hospedado na [Vercel](https://vercel.com/), que disponibiliza o site publicamente.
+
+### Publicação e atualizações
+
+- O código-fonte é mantido em um repositório GitHub.
+- A Vercel realiza a publicação do projeto conforme a configuração de integração com o repositório.
+- Novas alterações podem ser publicadas por meio de novos commits e envios para a branch configurada para deploy.
+
+### Configuração
+
+Por se tratar de uma aplicação estática desenvolvida com HTML, CSS e JavaScript, não é necessário configurar um servidor de aplicação ou executar um processo de build, desde que a configuração de deploy não exija etapas adicionais.
+
+---
+
 ## 📂 Estrutura de Pastas
 
 ```
