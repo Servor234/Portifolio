@@ -41,32 +41,27 @@
 - [Funcionalidades Principais](#-funcionalidades-principais)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Arquitetura](#-arquitetura)
-  - [Exemplos de diagramas](#exemplos-de-diagramas)
+  - [Organização das responsabilidades](#organização-das-responsabilidades)
+  - [Fluxo de funcionamento](#fluxo-de-funcionamento)
+  - [Estrutura de diretórios](#estrutura-de-diretórios)
 - [Instalação e Execução](#-instalação-e-execução)
   - [Pré-requisitos](#pré-requisitos)
-  - [Variáveis de Ambiente](#-variáveis-de-ambiente)
-     - [1 Back-end (Spring Boot)](#1-back-end-spring-boot)
-     - [2 Front-end (React, Vite)](#2-front-end-react-vite)
-     - [3 Exemplos de Variáveis de Ambiente na Vercel](#3-exemplos-de-variáveis-de-ambiente-na-vercel)
-  - [Instalação de Dependências](#-instalação-de-dependências)
-    - [Front-end (React)](#front-end-react)
-    - [Back-end (Spring Boot)](#back-end-spring-boot)
-  - [Inicialização do Banco de Dados (PostgreSQL)](#-inicialização-do-banco-de-dados-postgresql)
-  - [Como Executar a Aplicação](#-como-executar-a-aplicação)
-    - [Terminal 1: Back-end (Spring Boot)](#terminal-1-back-end-spring-boot)
-    - [Terminal 2: Front-end (React, Vite)](#terminal-2-front-end-react-vite)
-    - [Execução Local Completa com Docker Compose (Incluindo Banco de Dados)](#-execução-local-completa-com-docker-compose-incluindo-banco-de-dados)
-    - [Passos para build, inicialização e execução](#-passos-para-build-inicialização-e-execução)
+  - [Clonar o repositório](#1-clonar-o-repositório)
+  - [Executar o projeto](#2-executar-o-projeto)
+  - [Variáveis de Ambiente e Configurações](#-variáveis-de-ambiente-e-configurações)
+    - [Integração com o EmailJS](#1-integração-com-o-emailjs)
+    - [Hospedagem na Vercel](#2-hospedagem-na-vercel)
+    - [Segurança e Configuração](#3-segurança-e-configuração)
 - [Deploy](#-deploy)
 - [Estrutura de Pastas](#-estrutura-de-pastas)
 - [Demonstração](#-demonstração)
-  - [Aplicativo Mobile](#-aplicativo-mobile)
   - [Aplicação Web](#-aplicação-web)
-  - [Exemplo de saída no Terminal (para Back-end, API, CLI)](#-exemplo-de-saída-no-terminal-para-back-end-api-cli)
 - [Testes](#-testes)
+  - [Testes Funcionais](#testes-funcionais)
+  - [Testes de Compatibilidade](#testes-de-compatibilidade)
+  - [Ferramentas utilizadas](#ferramentas-utilizadas)
 - [Documentações utilizadas](#-documentações-utilizadas)
 - [Autores](#-autores)
-- [Contribuição](#-contribuição)
 - [Agradecimentos](#-agradecimentos)
 - [Licença](#-licença)
 
@@ -132,25 +127,40 @@ O projeto segue uma arquitetura de aplicação web estática, organizada em pág
 A estrutura abaixo é ilustrativa e pode ser ajustada à organização real do repositório.
 
 ```text
-portfolio/
-├── PaginaP/
-│   ├── Curriculo.html
-│   ├── Curriculo.css
-│   ├── Curriculo.js
-│   └── futaba.jpeg
-├── Proj/
-│   ├── Projetos.html
-│   ├── Projetos.css
-│   └── Projetos.js
-├── Exp/
-│   ├── Exp.html
-│   ├── Exp.css
-│   └── Exp.js
+Portifolio/
 ├── Contato/
-│   ├── Contato.html
-│   ├── Contato.css
-│   └── Contato.js
-└── README.md
+|   ├── Contato.css  
+|   ├── Contato.js  
+|   ├── Contato.html  
+|   ├── Git.png
+|   ├── Gmail.png  
+|   └── OIP2.webp
+|
+├── Exp/
+|   ├── Exp.css  
+|   ├── Exp.js  
+|   ├── Exp.html   
+|   ├── IMG1.jpg
+|   ├── logo-obi2026.svg  
+|   ├── OIP1.webp
+|   └── Puc.png
+|
+├── PaginaP/
+|   ├── Curriculo.css  
+|   ├── Curriculo.js  
+|   ├── Curriculo.html  
+|   └── Foto.jpg  
+|
+└── Proj/
+    ├── Projetos.css  
+    ├── Projetos.js  
+    ├── Projetos.html  
+    ├── Estacionamento.png
+    ├── Jogo_L.png
+    ├── Portifolio.png  
+    ├── Quorbe.png
+    └── Semaforo.png
+
 ```
 
 ---
@@ -192,106 +202,41 @@ Abra o arquivo `PaginaP/Curriculo.html` no navegador.
 O navegador abrirá a página localmente. A partir dela, será possível navegar pelas demais seções.
 
 ---
+### 🔑 Variáveis de Ambiente e Configurações
 
-### 🔑 Variáveis de Ambiente
+O portfólio foi desenvolvido utilizando HTML, CSS e JavaScript, com hospedagem na Vercel e integração com o EmailJS para o envio de mensagens pelo formulário de contato.
 
-Crie arquivos `.env` específicos e/ou configure as variáveis de ambiente no seu sistema para cada parte da aplicação.
+#### 1. Integração com o EmailJS
 
-#### 1 Back-end (Spring Boot)
+O formulário de contato utiliza o EmailJS para enviar mensagens sem a necessidade de implementar um back-end próprio.
 
-Configure estas variáveis como **variáveis de ambiente do sistema** ou em um arquivo de configuração do Spring (ex: `application.properties`/`application.yml`).
+Para configurar a integração, são necessários os seguintes identificadores:
 
-| Variável | Descrição | Exemplo |
-| :--- | :--- | :--- |
-| `SERVER_PORT` | Porta onde o Back-end será executado. | `8080` |
-| `SPRING_DATASOURCE_URL` | URL de conexão JDBC (PostgreSQL). | `jdbc:postgresql://localhost:5432/meubanco` |
-| `SPRING_DATASOURCE_USERNAME` | Usuário do banco de dados. | `postgres` |
-| `SPRING_DATASOURCE_PASSWORD` | Senha do banco de dados. | `senha-segura-123` |
-| `JWT_SECRET` | Chave secreta para assinatura de tokens (Opcional). | `chave_super_segura_base64` |
+| Configuração | Descrição |
+| :--- | :--- |
+| `PUBLIC_KEY` | Chave pública utilizada para inicializar o EmailJS. |
+| `SERVICE_ID` | Identificador do serviço de e-mail configurado no EmailJS. |
+| `TEMPLATE_ID` | Identificador do modelo de e-mail utilizado no envio das mensagens. |
 
-#### 2 Front-end (React, Vite)
+Esses valores são obtidos no painel da conta do EmailJS e utilizados pelo JavaScript responsável pelo formulário de contato.
 
-Crie um arquivo **`.env`** na raiz da pasta `/frontend` e use o prefixo `VITE_` (ou `REACT_APP_` se estiver usando CRA) para expor as variáveis ao *bundle* da aplicação.
+**Documentação oficial:** [EmailJS — Documentação](https://www.emailjs.com/docs/)
 
-| Variável | Descrição | Exemplo |
-| :--- | :--- | :--- |
-| `VITE_API_URL` | URL base do endpoint do Backend Spring Boot. | `http://localhost:8080/api` |
-| `VITE_EMAILJS_PUBLIC_KEY` | Chave pública para serviços de e-mail (Exemplo). | `sua_public_key_aqui` |
-| `VITE_GOOGLE_MAPS_KEY` | Chave de API para serviços de mapas (Opcional). | `AIzaSy...` |
+#### 2. Hospedagem na Vercel
 
----
+O projeto é hospedado na Vercel, responsável por disponibilizar as páginas HTML, os arquivos CSS, os scripts JavaScript e os recursos visuais do portfólio.
 
-#### 3. Exemplos de Variáveis de Ambiente na Vercel
+Como a aplicação utiliza tecnologias front-end sem um back-end próprio, não são necessárias variáveis como `SERVER_PORT`, `DATABASE_URL` ou `JWT_SECRET`.
 
-A Vercel permite configurar variáveis no painel (Project Settings > Environment Variables).
-Aqui estão exemplos comuns utilizadas em aplicações front-end e full-stack:
+Documentação: [Vercel — Variáveis de Ambiente](https://vercel.com/docs/environment-variables)
 
----
+#### 3. Segurança e Configuração
 
-##### **Exemplo 1 – Front-end com Next.js usando API externa**
+- Não incluir senhas, tokens privados ou credenciais secretas no código-fonte.
+- Não versionar arquivos `.env` que contenham informações sensíveis.
+- A chave pública do EmailJS é destinada ao uso no front-end, mas deve ser protegida contra uso indevido por meio das configurações de segurança disponíveis no serviço.
 
-```
-NEXT_PUBLIC_API_URL=https://meu-backend.vercel.app/api
-NEXT_PUBLIC_GOOGLE_ANALYTICS_ID=G-seu_google_analytics_id_aqui
-```
-
----
-
-##### **Exemplo 2 – Aplicação Full-stack (Next.js + Prisma + PostgreSQL)**
-
-```
-DATABASE_URL=postgresql://admin:senha-super-segura@ep-meu-banco.aws.neon.tech:5432/verceldb
-NEXTAUTH_SECRET=uma_chave_muito_longa_e_segura
-NEXTAUTH_URL=https://meu-sistema.vercel.app
-```
-
----
-
-##### **Exemplo 3 – Integração com APIs externas**
-
-```
-STRIPE_SECRET_KEY=sk_live_seu_stripe_key_aqui
-OPENAI_API_KEY=sk-sua_openai_key_aqui
-SENDGRID_API_KEY=SG.sua_sendgrid_key_aqui
-```
-
----
-
-##### **Exemplo 4 – Frontend com Vite (EmailJS)**
-
-```
-VITE_EMAILJS_SERVICE_ID=seu_service_id_aqui
-VITE_EMAILJS_TEMPLATE_ID_FOR_ME=seu_template_id_for_me_aqui
-VITE_EMAILJS_TEMPLATE_ID_FOR_SENDER=seu_template_id_for_sender_aqui
-VITE_EMAILJS_PUBLIC_KEY=sua_public_key_aqui
-```
-
-> **Obs:** As variáveis de ambiente em projetos **Vite** precisam começar com `VITE_` para que o Vite as reconheça e as inclua no *bundle* do frontend; variáveis sem esse prefixo não ficam disponíveis no código do cliente.
-
----
-
-Para adicionar essas variáveis:
-
-1.  Acesse a página de Environment Variables do seu projeto no Vercel (ex.: `https://vercel.com/<seu-usuario>/<seu-projeto>/settings/environment-variables`)
-2.  Clique em **"Add"** para adicionar cada variável com o nome e valor correspondente.
-
-Alternativamente, se estiver desenvolvendo localmente, crie um arquivo **`.env.local`** dentro da pasta **`frontend`** do seu projeto com o seguinte conteúdo:
-
-```
-# Variável essencial para conectar ao Back-end Spring Boot rodando localmente (normalmente na porta 8080)
-VITE_API_URL=http://localhost:8080/api
-
-# Variáveis para integrações externas de serviço de e-mail
-VITE_EMAILJS_SERVICE_ID=seu_service_id_aqui
-VITE_EMAILJS_TEMPLATE_ID_FOR_ME=seu_template_id_for_me_aqui
-VITE_EMAILJS_TEMPLATE_ID_FOR_SENDER=seu_template_id_for_sender_aqui
-VITE_EMAILJS_PUBLIC_KEY=sua_public_key_aqui
-
-# Outras chaves de serviço
-VITE_GOOGLE_MAPS_KEY=AIzaSy...
-```
-
-> 💡 **Localização:** Garanta que este arquivo esteja em **`/frontend/.env.local`** para que o **Vite** consiga carregá-lo e disponibilizar as variáveis para o Front-end durante o desenvolvimento.
+> **Observação:** atualmente, esta seção documenta as configurações da integração. Caso o projeto não utilize arquivos `.env`, não é necessário criá-los apenas para seguir este modelo.disponíveis no código do cliente.
 
 ---
 
@@ -459,106 +404,46 @@ docker-compose down
 Descreva o propósito das pastas principais.
 
 ```
-.
-├── .editorconfig                # ✍️ Padronização de estilo de código.
-├── .env.local                   # 🔒 Variáveis SENSÍVEIS do ambiente LOCAL (não versionado).
-├── .env.test                    # 🧪 Variáveis de ambiente para TESTES AUTOMATIZADOS.
-├── .env.staging                 # ☁️ Variáveis de ambiente para STAGING/HOMOLOGAÇÃO.
-├── .env.example                 # 🧩 Exemplo de TODAS as variáveis necessárias (sem valores sensíveis).
-├── .gitignore                   # 🧹 Ignora arquivos/pastas não versionadas (.env, node_modules, target, etc.).
-├── .vscode/                     # ⚙️ Configurações de ambiente da IDE (opcional).
-├── .github/                     # 🤖 CI/CD (Actions), templates de Issues e Pull Requests.
-├── README.md                    # 📘 Documentação principal do projeto.
-├── CONTRIBUTING.md              # 🤝 Guia de contribuição.
-├── LICENSE                      # ⚖️ Licença do projeto.
-├── docker-compose.yml           # 🐳 Orquestração dos containers (front/back/db/etc).
-├── docker-compose.override.yml  # 🐳 Configurações extras apenas para desenvolvimento.
-│
-├── /frontend                    # 📁 Aplicação React
-│   ├── .env.example             # 🧩 Variáveis de ambiente do Front-end.
-│   ├── Dockerfile               # 🐳 Docker build do Front-end.
-│   ├── .eslintrc.js             # ✨ Regras do ESLint.
-│   ├── .prettierrc              # 🎨 Configuração do Prettier.
-│   ├── /public                  # 📂 Arquivos estáticos e index.html.
-│   ├── /src                     # 📂 Código-fonte React
-│   │   ├── /components          # 🧱 Componentes reutilizáveis (UI).
-│   │   ├── /pages               # 📄 Páginas/rotas da aplicação.
-│   │   ├── /services            # 🔌 Serviços e chamadas HTTP.
-│   │   ├── /hooks               # 🎣 Hooks personalizados.
-│   │   ├── /styles              # 🎨 Estilos globais, temas, Design System.
-│   │   ├── /assets              # 🖼️ Recursos estáticos importados
-│   │   │   ├── /images          # 🖼️ Imagens.
-│   │   │   ├── /icons           # 💡 Ícones.
-│   │   │   └── /fonts           # ✒️ Fontes personalizadas.
-│   │   └── /utils               # 🛠️ Funções utilitárias.
-│   ├── package.json             # 📦 Dependências e scripts.
-│   └── yarn.lock / package-lock.json # 🔒 Lockfile das dependências.
-│
-├── /backend                     # 📁 Aplicação Spring Boot
-│   ├── .env.example             # 🧩 Variáveis de ambiente do Back-end.
-│   ├── Dockerfile               # 🐳 Docker build do Back-end.
-│   │
-│   ├── /src/main/java           # 📂 Código-fonte Java
-│   │   └── /com/exemplo/app
-│   │       ├── /controller      # 🎮 Endpoints REST.
-│   │       ├── /service         # ⚙️ Regras e lógica de negócio.
-│   │       ├── /repository      # 🗄️ Repositórios (JPA/Hibernate).
-│   │       ├── /model           # 🧬 Entidades persistentes (JPA).
-│   │       ├── /domain          # 🌐 Objetos de Domínio puro (sem anotações).
-│   │       ├── /dto             # ✉️ Data Transfer Objects.
-│   │       ├── /config          # 🔧 Configurações gerais (DB, Swagger, CORS, etc.).
-│   │       ├── /exception       # 💥 Exceptions e handlers globais.
-│   │       └── /security        # 🛡️ Autenticação e Autorização (Spring Security).
-│   │
-│   ├── /src/main/resources      # 📂 Recursos do Spring Boot
-│   │   ├── application.yml         # ⚙️ Configuração principal da aplicação
-│   │   ├── application-dev.yml     # 🧪 Configurações específicas do ambiente de DESENVOLVIMENTO
-│   │   ├── application-prod.yml    # 🚀 Configurações específicas para PRODUÇÃO
-│   │   ├── application-test.yml    # 🧪 Configurações usadas nos testes automatizados
-│   │   ├── /static                # 🌐 Arquivos estáticos (HTML/CSS/JS).
-│   │   ├── /templates             # 🖼️ Templates Thymeleaf/Freemarker.
-│   │   ├── /messages              # 🌎 Arquivos de internacionalização (i18n).
-│   │   └── /db                    # 💾 Scripts de banco usados pela aplicação
-│   │       └── /migration         # 📜 Migrações do banco (Flyway/Liquibase).
-│   │
-│   ├── /src/test/java            # 🧪 Testes unitários e de integração.
-│   └── pom.xml / build.gradle    # 🛠️ Build e dependências.
-│
-├── /scripts                      # 📜 Scripts de automação
-│   ├── dev.sh                    # 🚀 Ambiente de desenvolvimento completo.
-│   ├── build_all.sh              # 🛠️ Build geral (front + back).
-│   └── deploy.sh                 # ☁️ Deploy em produção/homologação.
-│
-├── /docs                         # 📚 Documentação, arquitetura, modelos C4, Swagger/OpenAPI.
-└── /tests                        # 🧪 Testes End-to-End (Cypress/Playwright).
+Portifolio
+├── Contato/
+|   ├── Contato.css  #Estilização da pagina
+|   ├── Contato.js  #Reatividade e conexão com as apis usadas para e-mail e para o fundo estilizado
+|   ├── Contato.html  #Estrutura da pagina para os métodos de contato
+|   ├── Git.png
+|   ├── Gmail.png  #grupo de imagens usadas no projeto
+|   └── OIP2.webp
+|
+├── Exp/
+|   ├── Exp.css  #modulo para estilizar o texto principal
+|   ├── Exp.js  #modulo usado para adicionar fundo estilizado
+|   ├── Exp.html  #modulo usado para a estrutura da pagina 
+|   ├── IMG1.jpg
+|   ├── logo-obi2026.svg  #grupo de imagens usadas no projeto
+|   ├── OIP1.webp
+|   └── Puc.png
+|
+├── PaginaP/
+|   ├── Curriculo.css  #estiliza a pagina
+|   ├── Curriculo.js  #adiciona o fundo estilizado da pagina
+|   ├── Curriculo.html  #esqueleto da pagina de curriculo
+|   └── Foto.jpg  #imagem usada no projeto
+|
+└── Proj/
+    ├── Projetos.css  #estilização da pagina
+    ├── Projetos.js  #Modulo que adiciona o clique nas bolinhas e a aparição do menu
+    ├── Projetos.html  #modulo estrutural para representar meus projetos feitos
+    ├── Estacionamento.png
+    ├── Jogo_L.png
+    ├── Portifolio.png  #grupo de imagens usadas no projeto
+    ├── Quorbe.png
+    └── Semaforo.png
 ```
 
 ---
 
 ## 🎥 Demonstração
-
-Use GIFs e prints para mostrar o projeto em ação.  
-
 > [!WARNING]
 > Dê preferência a hospedar suas imagens em um **CDN** (Content Delivery Network) ou no **GitHub Pages** para garantir que elas carreguem rapidamente e não quebrem. Saiba mais sobre o GitHub Pages clicando [aqui](https://github.com/joaopauloaramuni/joaopauloaramuni.github.io).
-
-### 📱 Aplicativo Mobile
-
-- GIF de demonstração (exemplo de fluxo de usuário):  
-
-| Demonstração 1 | Demonstração 2 | Demonstração 3 | Demonstração 4 |
-|----------------|----------------|----------------|----------------|
-| <img src="https://joaopauloaramuni.github.io/image/fundo_mobile_engsoft.jpeg" alt="Demonstração 1" height="400"> | <img src="https://joaopauloaramuni.github.io/image/fundo_mobile_engsoft.jpeg" alt="Demonstração 2" height="400"> | <img src="https://joaopauloaramuni.github.io/image/fundo_mobile_engsoft.jpeg" alt="Demonstração 3" height="400"> | <img src="https://joaopauloaramuni.github.io/image/fundo_mobile_engsoft.jpeg" alt="Demonstração 4" height="400"> |
-| _Sua gif aqui_ | _Sua gif aqui_ | _Sua gif aqui_ | _Sua gif aqui_ |
-
-Para melhor visualização, as telas principais estão organizadas lado a lado.
-
-| Tela | Captura de Tela |
-| :---: | :---: |
-| **Tela Inicial (Home)** | **Tela de Perfil / Settings** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela 1 do Mobile" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela 2 do Mobile" width="120px" height="120px"> |
-| **Tela de Cadastro** | **Tela de Lista / Detalhes** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela 3 do Mobile" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela 4 do Mobile" width="120px" height="120px"> |
 
 ### 🌐 Aplicação Web
 
@@ -573,93 +458,34 @@ Para melhor visualização, as telas principais estão organizadas lado a lado.
 | **Dashboard (Visão Geral)** | **Página Admin / Configurações** |
 | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela de Dashboard" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela Administrativa" width="120px" height="120px"> |
 
-### 💻 Exemplo de Saída no Terminal (para Back-end, API, CLI)
-
-Caso o projeto seja focado em serviços de Back-end (API, microserviço, CLI), utilize esta seção para demonstrar a interação com o sistema e a resposta esperada.
-
-#### 1. Demonstração da API (Exemplo com cURL)
-
-Mostra uma chamada simples para um endpoint da API (ex: GET de listagem).
-
-```bash
-# Chama o endpoint de listagem de usuários com o token de autenticação
-curl -X GET 'http://localhost:3000/api/v1/users' \
-     -H 'Authorization: Bearer <seu-jwt-token>'
-```
-
-**Saída Esperada:**
-```json
-{
-  "total": 2,
-  "users": [
-    {
-      "id": "1a2b3c",
-      "name": "Prof. Aramuni",
-      "email": "contato@exemplo.com",
-      "status": "active"
-    },
-    {
-      "id": "4d5e6f",
-      "name": "Colaborador Teste",
-      "email": "teste@exemplo.com",
-      "status": "inactive"
-    }
-  ]
-}
-```
-
 ---
-
-#### 2. Demonstração de Execução de CLI/Script
-
-Mostra como executar uma ferramenta de linha de comando ou um script de manutenção do projeto (ex: rodar migrações ou um job agendado).
-
-```bash
-# Executa a ferramenta de validação de Schema
-npm run cli validate:schema --target=production
-```
-
-**Saída Esperada:**
-```text
-[INFO] Iniciando validação do banco de dados...
-[SUCCESS] 15/15 tabelas verificadas.
-[WARNING] Coluna 'descricao' na tabela 'produtos' é nullable.
-[SUCCESS] Validação concluída. Nenhum erro crítico encontrado.
-Tempo de execução: 1.25s
-```
-
----
-
 ## 🧪 Testes
 
-### Testes Unitários e de Integração
-Para rodar os testes da unidade e integração:
+### Testes Funcionais
 
-```
-npm run test
-```
-*Ferramenta utilizada: Jest, Vitest, Mocha, etc.*
+Foram realizadas verificações das funcionalidades e dos elementos visuais do portfólio, incluindo a navegação entre páginas, o funcionamento dos links e a exibição dos conteúdos.
 
-### Testes End-to-End (E2E)
-Para rodar os testes de ponta a ponta (E2E):
+- **Navegação:** verificação dos links entre as páginas do portfólio.
+- **Elementos visuais:** verificação da exibição correta de imagens, textos e estilos.
+- **Interatividade:** verificação do funcionamento dos elementos implementados com JavaScript.
+- **Responsividade:** verificação da adaptação do layout a diferentes tamanhos de tela.
 
-```
-npm run test:e2e
-```
-*Ferramenta utilizada: Cypress, Playwright, Selenium, etc.*
+### Testes de Compatibilidade
 
+Verificação da apresentação e do funcionamento do portfólio em diferentes navegadores e resoluções de tela.
+
+### Ferramentas utilizadas
+
+- **Navegador web:** execução e verificação das páginas.
+- **Ferramentas de desenvolvedor (DevTools):** inspeção de elementos HTML, estilos CSS, erros no console e comportamento do JavaScript.
 ---
-
 ## 🔗 Documentações utilizadas
+Abaixo estão listadas as documentações técnicas e referências utilizadas como apoio no desenvolvimento do projeto.
 
-Liste aqui links para documentação técnica, referências de bibliotecas complexas ou guias de estilo que foram cruciais para o projeto.
-
-* 📖 **Framework/Biblioteca (Front-end):** [Documentação Oficial do **React**](https://react.dev/reference/react)
-* 📖 **Build Tool (Front-end):** [Guia de Configuração do **Vite**](https://vitejs.dev/config/)
-* 📖 **Framework (Back-end):** [Documentação Oficial do **Spring Boot**](https://docs.spring.io/spring-boot/docs/current/reference/html/)
-* 📖 **Containerização:** [Documentação de Referência do **Docker**](https://docs.docker.com/)
-* 📖 **Guia de Estilo:** [**Conventional Commits** (Padrão de Mensagens)](https://www.conventionalcommits.org/en/v1.0.0/)
-* 📖 **Documentação Interna:** [Design System do Projeto](./docs/design-system.md)
+-  **HTML:** [MDN Web Docs — HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+-  **CSS:** [MDN Web Docs — CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+-  **JavaScript:** [MDN Web Docs — JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+-  **Design responsivo:** [MDN Web Docs — Design responsivo](https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/CSS_layout/Responsive_Design)
 
 ---
 
@@ -669,24 +495,6 @@ Liste os principais contribuidores. Você pode usar links para seus perfis.
 | 👤 Nome | 🖼️ Foto | :octocat: GitHub | 💼 LinkedIn | 📤 Gmail |
 |---------|----------|-----------------|-------------|-----------|
 | Nome 1  | <div align="center"><img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/user1"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/user1"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:user1@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
-| Nome 2  | <div align="center"><img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/user2"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/user2"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:user2@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
-
-> [!TIP]
-> 💡 **Dica:** Escolha uma foto profissional, preferencialmente de rosto, evitando imagens com baixa qualidade, filtros excessivos ou elementos distrativos.
-
----
-
-## 🤝 Contribuição
-Guia para contribuições ao projeto.
-
-1.  Faça um `fork` do projeto.
-2.  Crie uma branch para sua feature (`git checkout -b feature/minha-feature`).
-3. Commit suas mudanças (`git commit -m 'feat: Adiciona nova funcionalidade X'`). **(Utilize [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/))**
-4.  Faça o `push` para a branch (`git push origin feature/minha-feature`).
-5.  Abra um **Pull Request (PR)**.
-
-> [!IMPORTANT]
-> 📝 **Regras:** Por favor, verifique o arquivo [`CONTRIBUTING.md`](./CONTRIBUTING.md) para detalhes sobre nosso guia de estilo de código e o processo de submissão de PRs.
 
 ---
 
@@ -695,7 +503,7 @@ Em ambiente acadêmico, citar fontes e inspirações é crucial (integridade aca
 
 Gostaria de agradecer aos seguintes canais e pessoas que foram fundamentais para o desenvolvimento deste projeto:
 
-* [**Engenharia de Software PUC Minas**](https://www.instagram.com/engsoftwarepucminas/) - Pelo apoio institucional, estrutura acadêmica e fomento à inovação e boas práticas de engenharia.
+* [**Ciencia da Computação PUC Minas**]([https://www.instagram.com/engsoftwarepucminas/](https://www.instagram.com/ccpucminas/)) - Pelo apoio institucional, estrutura acadêmica e fomento à inovação e boas práticas de engenharia.
 * [**Prof. Dr. João Paulo Aramuni**](https://github.com/joaopauloaramuni) - Pelos valiosos ensinamentos sobre **Arquitetura de Software** e **Padrões de Projeto**.
 * [**Fernanda Kipper**](https://www.instagram.com/kipper.dev/) - Pelos valiosos ensinamentos em **Desenvolvimento Web**, **DevOps** e melhores práticas em **Front-end**.
 * [**Rodrigo Branas**](https://branas.io/) - Pela didática excepcional em **Clean Architecture** e **Clean Code**.
