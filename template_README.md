@@ -401,8 +401,6 @@ docker-compose down
 
 ## 📂 Estrutura de Pastas
 
-Descreva o propósito das pastas principais.
-
 ```
 Portifolio
 ├── Contato/
