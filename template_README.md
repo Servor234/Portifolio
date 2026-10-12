@@ -492,7 +492,7 @@ Liste os principais contribuidores. Você pode usar links para seus perfis.
 
 | 👤 Nome | 🖼️ Foto | :octocat: GitHub | 💼 LinkedIn | 📤 Gmail |
 |---------|----------|-----------------|-------------|-----------|
-| Renato Teixeira Miranda Guimarães  | <div align="center"><img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/Servor234"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/renato-teixeira-miranda-guimarães-6a26a0417/"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:teixeirarenato603@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
+| Renato Teixeira Miranda Guimarães  | <div align="center"><img src="https://github.com/Servor234/Portifolio/blob/main/Assets/Foto.jpg" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/Servor234"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/renato-teixeira-miranda-guimarães-6a26a0417/"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:teixeirarenato603@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
 
 ---
 
@@ -501,7 +501,7 @@ Em ambiente acadêmico, citar fontes e inspirações é crucial (integridade aca
 
 Gostaria de agradecer aos seguintes canais e pessoas que foram fundamentais para o desenvolvimento deste projeto:
 
-* [**Ciencia da Computação PUC Minas**]([[https://www.instagram.com/ccpucminas]) - Pelo apoio institucional, estrutura acadêmica e fomento à inovação e boas práticas de engenharia.
+* [**Ciencia da Computação PUC Minas**](https://www.instagram.com/ccpucminas) - Pelo apoio institucional, estrutura acadêmica e fomento à inovação e boas práticas de engenharia.
 * [**Prof. Dr. João Paulo Aramuni**](https://github.com/joaopauloaramuni) - Pelos valiosos ensinamentos sobre **Arquitetura de Software** e **Padrões de Projeto**.
 * [**Fernanda Kipper**](https://www.instagram.com/kipper.dev/) - Pelos valiosos ensinamentos em **Desenvolvimento Web**, **DevOps** e melhores práticas em **Front-end**.
 * [**Rodrigo Branas**](https://branas.io/) - Pela didática excepcional em **Clean Architecture** e **Clean Code**.
