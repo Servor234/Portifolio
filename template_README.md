@@ -13,7 +13,7 @@
     </td>
     <td>
       <div>
-        <img src="https://joaopauloaramuni.github.io/image/cc-puc.jpg" alt="Logo do Projeto" width="120px"/>
+        <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/Logo.png" alt="Logo do Projeto" width="120px"/>
       </div>
     </td>
   </tr> 
