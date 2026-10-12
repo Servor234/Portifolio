@@ -496,7 +496,7 @@ Portifolio
 
 Para melhor visualização, as telas principais estão organizadas lado a lado.
 
-| Tela | Captura de Tela |
+| Telas  |
 | :---: | :---: |
 | **Página Inicial (Home)** | **Página de Login** |
 | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela Inicial da Aplicação Web" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela de Login" width="120px" height="120px"> |
