@@ -496,14 +496,12 @@ Portifolio
 
 Para melhor visualização, as telas principais estão organizadas lado a lado.
 
-| Telas |  |
+| Telas |  | 
 | :---: | :---: |
-| **Página Inicial (Home)** | **Página de Login** |
-| <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104541.gif" alt="Tela Inicial da Aplicação Web" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela de Login" width="120px" height="120px"> |
-| **Cadastro de Clientes** | **Cadastro de Produtos** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela de Cadastro de Clientes" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela de Cadastro de Produtos" width="120px" height="120px"> |
-| **Dashboard (Visão Geral)** | **Página Admin / Configurações** |
-| <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela de Dashboard" width="120px" height="120px"> | <img src="https://joaopauloaramuni.github.io/image/aramunilogo.png" alt="Tela Administrativa" width="120px" height="120px"> |
+| **Página Inicial (Home)** | **Página de Projetos** |
+| <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104541.gif" alt="Tela Inicial da Aplicação Web" width="120px" height="120px"> | <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104623.gif" alt="Pagina de Projetos" width="120px" height="120px"> |
+| **Pagina de Experiências** | **Pagina de Contato** |
+| <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104703.gif" alt="Tela de Cadastro de Clientes" width="120px" height="120px"> | <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_105129.gif" alt="Tela de Cadastro de Produtos" width="120px" height="120px"> |
 
 ---
 ## 🧪 Testes
