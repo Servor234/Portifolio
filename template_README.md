@@ -503,7 +503,7 @@ Em ambiente acadêmico, citar fontes e inspirações é crucial (integridade aca
 
 Gostaria de agradecer aos seguintes canais e pessoas que foram fundamentais para o desenvolvimento deste projeto:
 
-* [**Ciencia da Computação PUC Minas**]([https://www.instagram.com/engsoftwarepucminas/](https://www.instagram.com/ccpucminas/)) - Pelo apoio institucional, estrutura acadêmica e fomento à inovação e boas práticas de engenharia.
+* [**Ciencia da Computação PUC Minas**]([[https://www.instagram.com/ccpucminas]) - Pelo apoio institucional, estrutura acadêmica e fomento à inovação e boas práticas de engenharia.
 * [**Prof. Dr. João Paulo Aramuni**](https://github.com/joaopauloaramuni) - Pelos valiosos ensinamentos sobre **Arquitetura de Software** e **Padrões de Projeto**.
 * [**Fernanda Kipper**](https://www.instagram.com/kipper.dev/) - Pelos valiosos ensinamentos em **Desenvolvimento Web**, **DevOps** e melhores práticas em **Front-end**.
 * [**Rodrigo Branas**](https://branas.io/) - Pela didática excepcional em **Clean Architecture** e **Clean Code**.
