@@ -489,8 +489,6 @@ Portifolio
 ---
 
 ## 🎥 Demonstração
-> [!WARNING]
-> Dê preferência a hospedar suas imagens em um **CDN** (Content Delivery Network) ou no **GitHub Pages** para garantir que elas carreguem rapidamente e não quebrem. Saiba mais sobre o GitHub Pages clicando [aqui](https://github.com/joaopauloaramuni/joaopauloaramuni.github.io).
 
 ### 🌐 Aplicação Web
 
