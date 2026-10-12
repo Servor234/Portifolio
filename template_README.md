@@ -170,7 +170,35 @@ Portifolio/
 
 ---
 
-## ⚙️ Instalação e Execução
+## 🚀 Instalação e Execução
+
+### 🌐 Acessar o Portfólio
+
+O portfólio está hospedado na Vercel e pode ser acessado diretamente pelo navegador, sem necessidade de instalação.
+
+**[Acessar o Portfólio Online](https://portifolio-ibrl8jr95-porfolio-a9c7.vercel.app/PaginaP/Curriculo)**
+
+### 💻 Executar Localmente
+
+#### Pré-requisitos
+
+- Navegador atualizado;
+- Git (opcional, para clonar o repositório);
+- Visual Studio Code (opcional);
+- Extensão Live Server (opcional, recomendada para execução local).
+
+#### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/Servor234/Portifolio.git
+cd Portifolio
+```
+
+#### 2. Executar o projeto
+
+Abra o arquivo `PaginaP/Curriculo.html` diretamente no navegador ou utilize a extensão Live Server no Visual Studio Code.
+
+> **Observação:** é necessária uma conexão com a internet para carregar bibliotecas externas, acessar a API pública de Pokémon e utilizar os serviços externos integrados ao site.
 
 ### Pré-requisitos
 
@@ -182,7 +210,7 @@ Portifolio/
 ### 1. Clonar o repositório
 
 ```bash
-git clone URL_DO_SEU_REPOSITORIO
+git clone https://github.com/Servor234/Portifolio/tree/main
 ```
 
 Entre na pasta do projeto:
